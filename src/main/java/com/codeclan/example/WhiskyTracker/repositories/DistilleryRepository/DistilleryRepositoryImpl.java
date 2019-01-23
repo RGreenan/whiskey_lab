@@ -17,7 +17,7 @@ public class DistilleryRepositoryImpl implements DistilleryRepositoryCustom {
     @Autowired
     EntityManager entityManager;
 
-    @JsonIgnoreProperties("age")
+
     @Transactional
     public List<Distillery> findDistilleryWithWhiskyAged(int age){
         List<Distillery> results = null;
